@@ -1,0 +1,42 @@
+<html>
+<body>
+
+<table class="tableb">
+	<h1>BOTANIKUS KERT NÖVÉNYEINEK NYILVÁNTARTÁSA</h1>
+</table>
+<br>
+
+<h1> A botanikus kertben megtalálható növények listája  </h1>
+<h2> Lehetőség van új növények hozzáadására és törlésére.</h2>
+<br>
+
+<table class="tablea">
+  <thead>
+  <tr>
+    <th>Azonosító</th>
+    <th>Név</th>
+	<th>Latin név</th>
+	<th>Típus</th>
+    <th>Mennyiség</th>    
+    <th>Törlés</th>
+  </tr>
+  </thead>
+  <tr *ngFor="let plant of plants">
+    <td>{{plant._id}}</td>
+    <td>{{plant.name}}</td>
+	<td>{{plant.latinname}}</td>
+	<td>{{plant.type}}</td>
+    <td>{{plant.quantity}}</td>    
+    <td>
+      <button (click)="doDelete(plant)" class="dbtn"> Törlés</button>
+    </td>
+  </tr>
+</table>
+
+
+<br>
+
+<button mat-raised-button routerLinkActive="active" class="btn" routerLink="/add">Új növény hozzáadása</button>
+<button mat-raised-button routerLinkActive="active" class="btn" routerLink="/login">Vissza</button>
+</body>
+</html>
