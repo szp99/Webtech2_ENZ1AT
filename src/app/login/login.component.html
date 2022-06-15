@@ -1,0 +1,40 @@
+<html>
+<body>
+
+<table class="tableb">
+	<h1>BOTANIKUS KERT NÖVÉNYEINEK NYILVÁNTARTÁSA</h1>
+</table>
+<br>
+
+<h1>Belépés és Regisztráció</h1>
+<h2>Sikeres belépés után tovább lehet lépni a nyilvántartási listára</h2>
+<br>
+<p></p>
+
+<div class="formbox">
+  <h1>Bejelentkezés</h1>
+  
+<form class="form" [formGroup]= "loginForm" (ngSubmit)="onSubmit()" class="form">
+
+  <mat-form-field >
+		<input matInput type="text" class="form-control" placeholder="Felhasználónév:" formControlName="username">
+  </mat-form-field>
+  <br>
+  <mat-form-field >
+		<input matInput type="password" class="form-control" placeholder="Jelszó:" formControlName="password">
+  </mat-form-field>
+
+  <br>
+  <p></p>
+  <button mat-raised-button class="btn" type="submit" routerLinkActive="active"  >Bejelentkezés</button>
+  <button mat-raised-button class="btn" routerLinkActive="active"  routerLink="/register">Regisztráció</button>
+  
+</form>
+</div>
+
+<br><br>
+<h3>Készítette: Szemán Péter, ENZ1AT</h3>
+<h3>Web technológiák II., 2022. június</h3>
+
+</body>
+</html>
