@@ -1,0 +1,40 @@
+<html>
+<body>
+
+<table class="tableb">
+	<h1>BOTANIKUS KERT NÖVÉNYEINEK NYILVÁNTARTÁSA</h1>
+</table>
+<br>
+
+<h1> Új növény hozzáadása az adatbázishoz </h1>
+<br>
+<div class="formbox">
+  <h1>Hozzáadás</h1>
+  
+<form class="form-horizontal"  [formGroup]="plantForm" (ngSubmit)="onSubmit()" class="form">
+
+  <mat-form-field >
+    <input matInput type="text" class="form-control" placeholder="Növény neve:" formControlName="name">
+  </mat-form-field>
+  <br>
+  <mat-form-field >
+    <input matInput type="text" class="form-control" placeholder="Növény latin neve:" formControlName="latinname">
+  </mat-form-field>
+  <br>
+  <mat-form-field >
+    <input matInput type="text" class="form-control" placeholder="Növény típusa:" formControlName="type">
+  </mat-form-field>
+  <br>
+  <mat-form-field >
+    <input matInput type="number" class="form-control" placeholder="Mennyiség:" formControlName="quantity">
+  </mat-form-field>
+  <br> 
+  
+  <p></p>
+  <button mat-raised-button class="btn" type="submit" >Új növény hozzáadása</button>
+  <button mat-raised-button routerLinkActive="active" class="btn" routerLink="/list">Vissza</button>
+  
+</form>
+</div>
+</body>
+</html>
