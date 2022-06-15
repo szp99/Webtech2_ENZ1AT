@@ -1,0 +1,54 @@
+body {
+  background-image: url("img_add.jpg");
+  text-align: center;
+  padding: 50px;
+  color: white;
+}
+
+.form {
+  alignment: center;
+}
+
+input {
+  margin: 5px;
+  padding: 10px;
+}
+
+.input {
+  margin: 5px;
+  padding: 10px;
+}
+
+.tableb{
+  text-align: center;
+  color: white;
+  max-height: 800px;
+  margin: auto;
+  width: 100%;
+  border: black 1px;
+  alignment: center;
+  font-size: large;
+  background-color: green;
+}
+
+.formbox{
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+  background-color: black;
+}
+
+.btn:hover {
+  background-color: yellow;
+  color: black;
+}
+
+.btn {
+  width: max-content;
+  alignment: center;
+  margin: 5px;
+  padding: 10px 40px 10px 40px;
+  color: black;
+  background-color: green;
+}
